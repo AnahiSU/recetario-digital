@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { FiMenu, FiSearch, FiPlusCircle, FiShoppingCart } from 'react-icons/fi';
+import { FiMenu, FiSearch, FiPlusCircle, FiShoppingCart, FiHeart } from 'react-icons/fi';
 
 function Sidebar() {
   const [activeTab, setActiveTab] = useState('menu');
 
   const menuItems = [
+    { id: 'receipts', icon: FiHeart},
     { id: 'menu', icon: FiMenu },
     { id: 'search', icon: FiSearch },
     { id: 'add', icon: FiPlusCircle },
