@@ -1,26 +1,27 @@
-import { useState } from 'react';
-import { FiMenu, FiSearch, FiPlusCircle, FiShoppingCart } from 'react-icons/fi';
+import { Link, useLocation } from 'react-router-dom';
+import { FiMenu, FiSearch, FiPlusCircle, FiShoppingCart, FiHeart } from 'react-icons/fi';
 
 function Sidebar() {
-  const [activeTab, setActiveTab] = useState('menu');
+  const location = useLocation();
 
   const menuItems = [
-    { id: 'menu', icon: FiMenu },
-    { id: 'search', icon: FiSearch },
-    { id: 'add', icon: FiPlusCircle },
-    { id: 'cart', icon: FiShoppingCart },
+    { id: 'receipts', icon: FiHeart, path: '/mis-recetas' },
+    { id: 'menu', icon: FiMenu, path: '/' },
+    { id: 'search', icon: FiSearch, path: '/buscar' },
+    { id: 'add', icon: FiPlusCircle, path: '/agregar' },
+    { id: 'cart', icon: FiShoppingCart, path: '/carrito' },
   ];
 
   return (
     <aside className="w-20 h-screen bg-sage-green/20 flex flex-col items-center py-6">
       {menuItems.map((item) => {
         const Icon = item.icon;
-        const isActive = activeTab === item.id;
+        const isActive = location.pathname === item.path;
 
         return (
-          <div
+          <Link
+            to={item.path}
             key={item.id}
-            onClick={() => setActiveTab(item.id)}
             className={`relative w-full h-20 flex justify-center items-center cursor-pointer transition-colors
               ${isActive ? 'bg-sage-green' : 'hover:bg-sage-green/30'}
             `}
@@ -37,7 +38,7 @@ function Sidebar() {
                            border-l-[16px] border-l-sage-green"
               ></div>
             )}
-          </div>
+          </Link>
         );
       })}
     </aside>

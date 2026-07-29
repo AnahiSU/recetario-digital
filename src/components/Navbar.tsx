@@ -9,7 +9,7 @@ function Navbar() {
             className="w-full h-full object-cover"
           />
         </div>
-        <p className="text-cream text-2xl font-bold tracking-wide">
+        <p className="text-black text-2xl font-bold tracking-wide">
           Munay
         </p>
       </div>
