@@ -5,6 +5,7 @@ import MyRecipes from "./pages/MyRecipes";
 import WeeklyMenu from "./pages/WeeklyMenu";
 import Profile from "./pages/Profile";
 import RecipeDetail from "./pages/RecipeDetail";
+import ShoppingList from "./pages/ShoppingList";
 
 function App() {
     return (
@@ -16,6 +17,8 @@ function App() {
                 <Route path="mis-recetas/:id" element={<RecipeDetail />} />
                 <Route path="menu-semanal" element={<WeeklyMenu />} />
                 <Route path="perfil" element={<Profile />} />
+                <Route path="receta/:id" element={<RecipeDetail />} />
+                <Route path="carrito" element={<ShoppingList/>} />
             </Route>
         </Routes>
     );

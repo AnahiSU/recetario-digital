@@ -26,6 +26,7 @@ function SearchReceipts() {
                 {recipes.map((receta) => (
                     <ReceiptCard 
                         key={receta.id}
+                        id={receta.id}
                         name={receta.name}
                         time={receta.time}
                         portions={receta.portions}
@@ -33,7 +34,6 @@ function SearchReceipts() {
                     />
                 ))}
             </div>
-            
         </div>
     );
 }

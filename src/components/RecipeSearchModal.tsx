@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FiChevronLeft, FiX, FiSearch, FiClock, FiUser } from "react-icons/fi";
 import ConfirmDialog from "./ConfirmDialog";
 import Toast from "./Toast";
@@ -11,31 +11,34 @@ interface RecipeSearchModalProps {
     onClose: () => void;
     onSave: (meal: Meal) => void;
 }
+
 function RecipeSearchModal({ isOpen, mealLabel, onClose, onSave }: RecipeSearchModalProps) {
     const [query, setQuery] = useState("");
     const [selectedId, setSelectedId] = useState<number | null>(null);
     const [confirmOpen, setConfirmOpen] = useState(false);
-    const [toast, setToast] = useState<{ message: string; type: "success" | "info" } | null>(
-        null
-    );
-    // reset state cada vez que se vuelve a abrir
-    useEffect(() => {
+    const [toast, setToast] = useState<{ message: string; type: "success" | "info" } | null>(null);
+    const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
+    if (isOpen !== prevIsOpen) {
+        setPrevIsOpen(isOpen);
         if (isOpen) {
             setQuery("");
             setSelectedId(null);
             setConfirmOpen(false);
             setToast(null);
         }
-    }, [isOpen]);
+    }
 
     if (!isOpen) return null;
+
     const filteredRecipes = recipes.filter((recipe) =>
         recipe.name.toLowerCase().includes(query.toLowerCase())
     );
     const selectedRecipe = recipes.find((recipe) => recipe.id === selectedId) ?? null;
+
     function requestCancel() {
         setConfirmOpen(true);
     }
+
     function confirmCancel() {
         setConfirmOpen(false);
         setToast({ message: "Cambios cancelados", type: "info" });
@@ -45,6 +48,7 @@ function RecipeSearchModal({ isOpen, mealLabel, onClose, onSave }: RecipeSearchM
         if (!selectedRecipe) return;
         setToast({ message: "Guardado con éxito", type: "success" });
     }
+
     function handleToastDone() {
         const shouldSave = toast?.type === "success" && selectedRecipe;
         setToast(null);
@@ -163,6 +167,7 @@ function RecipeSearchModal({ isOpen, mealLabel, onClose, onSave }: RecipeSearchM
 
                 {confirmOpen && (
                     <ConfirmDialog
+                        isOpen={confirmOpen}
                         title="¿Seguro que quieres cancelar?"
                         message="Vas a perder la seleccion que hiciste en esta ventana."
                         confirmLabel="Si, cancelar"
@@ -182,4 +187,5 @@ function RecipeSearchModal({ isOpen, mealLabel, onClose, onSave }: RecipeSearchM
         </div>
     );
 }
+
 export default RecipeSearchModal;

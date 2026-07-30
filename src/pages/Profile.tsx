@@ -229,6 +229,7 @@ function Profile() {
             {confirmCancelOpen && (
                 <div className="fixed inset-0 z-50">
                     <ConfirmDialog
+                        isOpen={confirmCancelOpen}
                         title="¿Seguro que quieres cancelar?"
                         message="Vas a perder los cambios que no has guardado."
                         confirmLabel="Si, cancelar"
