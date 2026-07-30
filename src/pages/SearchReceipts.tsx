@@ -7,7 +7,7 @@ import recipes from "../mocks/recipes.json" with { type: "json" };
 function SearchReceipts() {
     return (
         <div className="p-8 w-full max-w-7xl">
-            <div className="mb-6, font-poppins">
+            <div className="mb-6 font-poppins">
                 <Link 
                     to="/mis-recetas" 
                     className="inline-flex items-center gap-2 text-2xl font-medium text-slate-800 hover:text-sage-green transition-colors w-fit"
@@ -26,6 +26,7 @@ function SearchReceipts() {
                 {recipes.map((receta) => (
                     <ReceiptCard 
                         key={receta.id}
+                        id={receta.id}
                         name={receta.name}
                         time={receta.time}
                         portions={receta.portions}
@@ -33,7 +34,6 @@ function SearchReceipts() {
                     />
                 ))}
             </div>
-            
         </div>
     );
 }
