@@ -1,10 +1,17 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { FiChevronLeft, FiClock, FiUser, FiEdit, FiTrash2 } from "react-icons/fi";
-import recipes from "../mocks/recipes.json" with { type: "json" };
+import { useRecipes } from "../context/RecipesContext";
+import ConfirmDialog from "../components/ConfirmDialog";
 
 function RecipeDetail() {
     const { id } = useParams();
+    const navigate = useNavigate();
+    const { recipes, deleteRecipe } = useRecipes();
+    const [showConfirm, setShowConfirm] = useState(false);
+
     const receta = recipes.find(r => r.id.toString() === id) || {
+        id: 0,
         name: "Receta no encontrada",
         time: "--",
         portions: "--",
@@ -15,12 +22,18 @@ function RecipeDetail() {
         notes: []
     };
 
+    function handleConfirmDelete() {
+        deleteRecipe(receta.id);
+        setShowConfirm(false);
+        navigate("/mis-recetas");
+    }
+
     return (
         <div className="p-8 w-full max-w-5xl mx-auto font-poppins text-slate-800">
             <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-4">
                     <Link to="/buscar" className="hover:text-sage-green transition-colors">
-                        <FiChevronLeft className="text-3xl" />
+                        <FiChevronLeft className="text-3xl" />  
                     </Link>
                     <h1 className="text-3xl font-semibold">{receta.name}</h1>
                     <span className="bg-sage-green/15 border border-sage-green/60 text-sm px-3 py-1 rounded-md text-gray-600">
@@ -28,14 +41,21 @@ function RecipeDetail() {
                     </span>
                 </div>
                 <div className="flex gap-3">
-                    <button className="p-2 border-2 border-sage-green/60 rounded hover:bg-sage-green/15 transition-colors">
+                    <Link
+                        to={`/receta/editar/${receta.id}`}
+                        className="p-2 border-2 border-sage-green/60 rounded hover:bg-sage-green/15 transition-colors"
+                    >
                         <FiEdit className="text-xl text-gray-700" />
-                    </button>
-                    <button className="p-2 border-2 border-sage-green/60 rounded hover:bg-sage-green/15 transition-colors">
+                    </Link>
+                    <button
+                        className="p-2 border-2 border-sage-green/60 rounded hover:bg-sage-green/15 transition-colors cursor-pointer"
+                        onClick={() => setShowConfirm(true)}
+                    >
                         <FiTrash2 className="text-xl text-gray-700" />
                     </button>
                 </div>
             </div>
+
             <div className="flex gap-8 text-gray-600 mb-6 font-inter pl-10">
                 <div className="flex items-center gap-2">
                     <span>Tiempo: {receta.time}</span>
@@ -93,6 +113,15 @@ function RecipeDetail() {
                 </div>
                 
             </div>
+            <ConfirmDialog
+                isOpen={showConfirm}
+                title="Eliminar receta"
+                message="¿Estás seguro que quieres eliminar esta receta?"
+                confirmLabel="Aceptar"
+                cancelLabel="Cancelar"
+                onConfirm={handleConfirmDelete}
+                onCancel={() => setShowConfirm(false)}
+            />
         </div>
     );
 }
