@@ -79,7 +79,7 @@ function Profile() {
         setToast({ message: "Cambios cancelados", type: "info" });
     }
     return (
-        <div className="p-8 w-full max-w-2xl font-poppins">
+        <div className="p-8 mx-auto w-full max-w-2xl font-poppins">
             <div className="mb-1">
                 <Link
                     to="/perfil"

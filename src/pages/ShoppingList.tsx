@@ -113,7 +113,7 @@ function ShoppingList() {
     };
 
     return (
-        <div className="p-8 w-full max-w-5xl font-poppins text-slate-800">
+        <div className="p-8 mx-auto w-full max-w-5xl font-poppins text-slate-800">
             <div className="mb-6">
                 <Link 
                     to="/" 

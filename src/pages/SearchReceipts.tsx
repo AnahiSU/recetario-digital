@@ -6,7 +6,7 @@ import recipes from "../mocks/recipes.json" with { type: "json" };
 
 function SearchReceipts() {
     return (
-        <div className="p-8 w-full max-w-7xl">
+        <div className="p-8 mx-auto w-full max-w-7xl">
             <div className="mb-6 font-poppins">
                 <Link 
                     to="/mis-recetas" 

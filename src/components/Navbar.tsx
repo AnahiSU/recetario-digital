@@ -5,7 +5,7 @@ function Navbar() {
       <div className="flex items-center gap-3">
         <div className="w-10 h-10 bg-cream rounded-lg flex items-center justify-center overflow-hidden">
           <img 
-            src="/ruta-a-tu-logo.png" 
+            src="https://static.vecteezy.com/system/resources/previews/003/344/946/non_2x/empty-clay-bowl-example-of-pottery-ceramic-kitchen-dishware-vector.jpg" 
             alt="logo" 
             className="w-full h-full object-cover"
           />

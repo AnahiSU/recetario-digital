@@ -30,7 +30,7 @@ function MenuSemanal() {
         );
     }
     return (
-        <div className="p-8 w-full max-w-7xl font-poppins">
+        <div className="p-8 mx-auto w-full max-w-7xl font-poppins">
             <div className="mb-2">
                 <Link
                     to="/menu-semanal"

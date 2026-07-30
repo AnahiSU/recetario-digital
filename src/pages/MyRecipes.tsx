@@ -37,7 +37,7 @@ export default function MyRecipes() {
   }
 
   return (
-    <div className="p-4 sm:p-8 w-full max-w-7xl">
+    <div className="p-4 mx-auto sm:p-8 w-full max-w-7xl">
       <div className="mb-6">
         <div className="relative inline-block" ref={dropdownRef}>
           <button
