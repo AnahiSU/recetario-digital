@@ -9,6 +9,7 @@ export default function MyRecipes() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
+  // Categorías dinámicas a partir de las recetas existentes
   const categories = useMemo(() => {
     const unique = Array.from(new Set(recipes.map((r) => r.category).filter(Boolean)));
     return unique;
@@ -19,6 +20,7 @@ export default function MyRecipes() {
     return recipes.filter((r) => r.category === selectedCategory);
   }, [recipes, selectedCategory]);
 
+  // Cerrar el dropdown al hacer clic afuera
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -35,8 +37,8 @@ export default function MyRecipes() {
   }
 
   return (
-    <>
-      <div className="p-4 sm:p-8">
+    <div className="p-4 sm:p-8 w-full max-w-7xl">
+      <div className="mb-6">
         <div className="relative inline-block" ref={dropdownRef}>
           <button
             type="button"
@@ -78,27 +80,25 @@ export default function MyRecipes() {
           )}
         </div>
       </div>
-      
-      <div className="p-6 sm:p-10 flex justify-center">
-        {filteredRecipes.length === 0 ? (
-          <p className="font-poppins text-slate-500 py-10">
-            No hay recetas en esta categoría todavía.
-          </p>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 w-full max-w-5xl">
-            {filteredRecipes.map((recipe) => (
-              <ReceiptCard
-                key={recipe.id}
-                id={recipe.id}
-                name={recipe.name}
-                time={recipe.time}
-                portions={recipe.portions}
-                urlPhoto={recipe.urlPhoto}
-              />
-            ))}
-          </div>
-        )}
-      </div>
-    </>
+
+      {filteredRecipes.length === 0 ? (
+        <p className="font-poppins text-slate-500 py-10">
+          No hay recetas en esta categoría todavía.
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {filteredRecipes.map((recipe) => (
+            <ReceiptCard
+              key={recipe.id}
+              id={recipe.id}
+              name={recipe.name}
+              time={recipe.time}
+              portions={recipe.portions}
+              urlPhoto={recipe.urlPhoto}
+            />
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
