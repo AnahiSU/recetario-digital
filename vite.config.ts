@@ -9,6 +9,5 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss(),
-  ],
-  //base: '/munay-ihc/'
+  ]
 })

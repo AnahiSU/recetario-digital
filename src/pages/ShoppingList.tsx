@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FiChevronLeft, FiTrash2, FiSearch, FiX, FiCheck } from "react-icons/fi";
 import ConfirmDialog from "../components/ConfirmDialog";
 import recipes from "../mocks/recipes.json" with { type: "json" };
+import weekMenu from "../mocks/weekMenu.json" with { type: "json" };
 
 function ShoppingList() {
     const [items, setItems] = useState([
@@ -76,6 +77,39 @@ function ShoppingList() {
         }
         
         setSelectedRecipeId(null);
+        setActiveModal("none");
+    };
+
+    const handleAddMenu = () => {
+        if (selectedDays.length === 0) return;
+        type ShoppingItem = { 
+            id: string; 
+            name: string; 
+            quantity: string; 
+            checked: boolean 
+        };
+        let newIngredients: ShoppingItem[] = [];
+        selectedDays.forEach(selectedDay => {
+            const dayData = weekMenu.days.find(d => d.name === selectedDay || d.day === selectedDay);
+            if (dayData && dayData.almuerzo && dayData.almuerzo.id) {
+                const recipeId = dayData.almuerzo.id; 
+                const recipe = recipes.find(r => r.id === recipeId);
+                
+                if (recipe) {
+                    const ingredientsForRecipe = recipe.ingredients.map((ing, index) => ({
+                        id: `menu-${selectedDay}-${recipe.id}-${Date.now()}-${index}`,
+                        name: ing.name,
+                        quantity: ing.quantity,
+                        checked: false
+                    }));
+                    
+                    newIngredients = [...newIngredients, ...ingredientsForRecipe];
+                }
+            }
+        });
+
+        setItems(prevItems => [...prevItems, ...newIngredients]);
+        setSelectedDays(["Lunes", "Martes", "Jueves", "Viernes", "Domingo"]);
         setActiveModal("none");
     };
 
@@ -263,9 +297,11 @@ function ShoppingList() {
                             {daysOfWeek.map((day) => (
                                 <div key={day} className="flex items-center gap-4 cursor-pointer" onClick={() => toggleDaySelection(day)}>
                                     <button 
-                                        className="w-6 h-6 flex items-center justify-center border-2 border-slate-700 rounded-sm bg-white"
+                                        onClick={handleAddMenu} 
+                                        className="px-6 py-2 bg-gray-300 border-2 border-slate-700 rounded-xl text-slate-800 font-medium hover:bg-gray-400 transition-colors disabled:opacity-50"
+                                        disabled={selectedDays.length === 0}
                                     >
-                                        {selectedDays.includes(day) && <FiCheck className="text-xl text-slate-700" />}
+                                        Agregar
                                     </button>
                                     <span className="text-slate-700">{day}</span>
                                 </div>
