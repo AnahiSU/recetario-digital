@@ -2,29 +2,390 @@
   {
     "id": 1,
     "name": "Pie de limón",
-    "time": "15-20 min",
+    "category": "Postres",
+    "time": "15 min",
     "portions": "3 personas",
-    "urlPhoto": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=500&q=60"
+    "urlPhoto": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "1 paquete de galletas de vainilla",
+      "80g de mantequilla derretida",
+      "1 lata de leche condensada",
+      "1/2 taza de jugo de limón recién exprimido",
+      "2 claras de huevo",
+      "4 cucharadas de azúcar"
+    ],
+    "preparation": [
+      "Triturar las galletas y mezclarlas con la mantequilla derretida hasta formar una base arenosa.",
+      "Presionar la mezcla en el fondo de un molde y refrigerar durante 10 minutos.",
+      "Mezclar la leche condensada con el jugo de limón hasta que espese de forma natural.",
+      "Verter el relleno de limón sobre la base de galletas ya fría.",
+      "Batir las claras de huevo a punto de nieve agregando el azúcar poco a poco para hacer el merengue.",
+      "Decorar la parte superior con el merengue y refrigerar al menos 2 horas antes de servir."
+    ],
+    "notes": [
+      "Puedes dorar el merengue con un soplete de cocina o 3 minutos al horno.",
+      "Agrega ralladura de limón en el relleno para un toque más cítrico."
+    ]
   },
   {
     "id": 2,
     "name": "Ensalada César",
+    "category": "Ensaladas",
     "time": "10 min",
     "portions": "2 personas",
-    "urlPhoto": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=500&q=60"
+    "urlPhoto": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "1 lechuga romana fresca",
+      "1 pechuga de pollo cocida y en tiras",
+      "1/2 taza de crotones de pan",
+      "1/3 de taza de queso parmesano rallado",
+      "3 cucharadas de aderezo César"
+    ],
+    "preparation": [
+      "Lavar, desinfectar y cortar la lechuga romana en trozos medianos.",
+      "Colocar la lechuga como base en una ensaladera amplia.",
+      "Añadir las tiras de pechuga de pollo tibia o fría sobre la lechuga.",
+      "Incorporar los crotones y espolvorear el queso parmesano rallado.",
+      "Agregar el aderezo César justo antes de servir y mezclar suavemente."
+    ],
+    "notes": [
+      "No pongas el aderezo con mucha anticipación para que los crotones no se aguaden.",
+      "Puedes cambiar el pollo por camarones salteados."
+    ]
   },
   {
     "id": 3,
     "name": "Pasta al Pesto",
+    "category": "Pastas",
     "time": "25 min",
     "portions": "4 personas",
-    "urlPhoto": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=500&q=60"
+    "urlPhoto": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "400g de pasta (spaghetti o penne)",
+      "2 tazas de hojas de albahaca fresca",
+      "1/3 de taza de nueces o piñones",
+      "1/2 taza de queso parmesano rallado",
+      "1/2 taza de aceite de oliva extra virgen",
+      "2 dientes de ajo y sal al gusto"
+    ],
+    "preparation": [
+      "Hervir abundante agua con sal y cocinar la pasta según las instrucciones del empaque hasta que esté al dente.",
+      "En una licuadora o procesador, agregar la albahaca, los ajos, las nueces, el queso parmesano y una pizca de sal.",
+      "Procesar los ingredientes mientras viertes el aceite de oliva en forma de hilo hasta obtener una salsa homogénea.",
+      "Escurrir la pasta reservando 1/4 de taza del agua de cocción.",
+      "Mezclar la pasta caliente con la salsa pesto y un poco del agua de cocción para darle cremosidad."
+    ],
+    "notes": [
+      "No calientes la salsa pesto directamente en el fuego para que la albahaca no se amargue.",
+      "Agrega unos tomates cherry partidos a la mitad al momento de servir."
+    ]
   },
   {
     "id": 4,
     "name": "Tacos al Pastor",
+    "category": "Platos Fuertes",
     "time": "45 min",
     "portions": "5 personas",
-    "urlPhoto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=500&q=60"
+    "urlPhoto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "1 kg de lomo o pierna de cerdo en filetes delgados",
+      "50g de pasta de achiote y 1/2 taza de jugo de piña",
+      "2 chiles guajillo hidratados y 2 dientes de ajo",
+      "15 tortillas de maíz",
+      "1 taza de piña fresca en cubos",
+      "Cilantro y cebolla finamente picados"
+    ],
+    "preparation": [
+      "Licuar los chiles guajillo, el achiote, el ajo, el jugo de piña, sal y especias hasta crear un adobo.",
+      "Marinar la carne de cerdo con el adobo y reposar en el refrigerador por al menos 30 minutos.",
+      "Calentar una sartén o plancha con un poco de aceite y cocinar la carne a fuego medio-alto hasta que esté bien dorada.",
+      "Picar la carne cocida en trozos pequeños para los tacos.",
+      "Calentar las tortillas de maíz y asar ligeramente los cubos de piña en la misma sartén.",
+      "Armar los tacos con la carne, piña, cebolla, cilantro y jugo de limón."
+    ],
+    "notes": [
+      "Entre más tiempo dejes marinar la carne (incluso toda la noche), mejor sabor tendrá.",
+      "Acompaña siempre con una buena salsa taquera verde o roja."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Lasaña de Carne",
+    "category": "Pastas",
+    "time": "60 min",
+    "portions": "6 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "12 láminas de pasta para lasaña",
+      "500g de carne molida de res",
+      "2 tazas de salsa de tomate casera o marinara",
+      "1 cebolla y 2 dientes de ajo picados",
+      "200g de queso mozzarella rallado",
+      "1 taza de salsa bechamel"
+    ],
+    "preparation": [
+      "Sofreír la cebolla y el ajo en una sartén con aceite de oliva hasta que estén transparentes.",
+      "Agregar la carne molida, sazonar con sal y pimienta, y cocinar hasta que pierda el color rosado.",
+      "Verter la salsa de tomate sobre la carne y cocinar a fuego lento durante 15 minutos.",
+      "En un refractario apto para horno, colocar una capa ligera de salsa bechamel en el fondo.",
+      "Alternar capas de láminas de pasta, carne con salsa, salsa bechamel y queso mozzarella.",
+      "Terminar con una capa de abundante queso mozzarella y hornear a 180°C por 25-30 minutos hasta que gratiné."
+    ],
+    "notes": [
+      "Deja reposar la lasaña 10 minutos fuera del horno antes de cortarla para que no se desmorone.",
+      "Puedes usar pasta precocida para ahorrar tiempo."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Arroz Chaufa",
+    "category": "Platos Fuertes",
+    "time": "30 min",
+    "portions": "4 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "4 tazas de arroz blanco cocido (de preferencia del día anterior)",
+      "300g de pechuga de pollo en cubos pequeños",
+      "3 huevos batidos",
+      "1 taza de cebolla china (cebollín) picada",
+      "4 cucharadas de sillao (salsa de soya)",
+      "1 cucharadita de kion (jengibre) rallado"
+    ],
+    "preparation": [
+      "Preparar una tortilla fina con los huevos batidos en un wok o sartén grande, cortarla en trozos y reservar.",
+      "En el mismo wok a fuego alto con un poco de aceite, saltear el pollo hasta que esté dorado.",
+      "Añadir el kion rallado y sofreír unos segundos para aromatizar el aceite.",
+      "Incorporar el arroz cocido y saltear sin dejar de mover para separar los granos.",
+      "Verter la salsa de soya por los bordes del wok y mezclar bien para teñir el arroz de manera uniforme.",
+      "Agregar el huevo reservado y la cebolla china, dar unas últimas vueltas y retirar del fuego."
+    ],
+    "notes": [
+      "El secreto de un buen chaufa es usar arroz frío del día anterior para que quede suelto.",
+      "Puedes añadir unas gotas de aceite de ajonjolí al final para potenciar el aroma."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Hamburguesa Artesanal",
+    "category": "Comida Rápida",
+    "time": "25 min",
+    "portions": "2 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "300g de carne molida de res (con 20% de grasa)",
+      "2 panes para hamburguesa tipo brioche",
+      "2 rebanadas de queso cheddar",
+      "1 tomate en rebanadas y hojas de lechuga",
+      "2 cucharadas de mantequilla",
+      "Sal y pimienta negra recién molida"
+    ],
+    "preparation": [
+      "Formar dos medallones con la carne molida sin manipularla en exceso; hacer un ligero hundimiento en el centro.",
+      "Sazonar generosamente ambas caras de la carne con sal y pimienta negra justo antes de cocinar.",
+      "Untar mantequilla en las caras internas de los panes y tostarlos ligeramente en una plancha o sartén.",
+      "Cocinar las carnes en una sartén bien caliente o plancha durante 3-4 minutos por lado.",
+      "Colocar una rebanada de queso cheddar sobre cada carne en el último minuto para que se funda.",
+      "Armar la hamburguesa untando tus aderezos favoritos en el pan, seguido de lechuga, tomate y la carne con queso."
+    ],
+    "notes": [
+      "No aplastes la carne con la espátula mientras se cocina, o perderá sus jugos naturales.",
+      "El porcentaje de grasa del 20% es clave para que quede suave y jugosa."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Ceviche de Pescado",
+    "category": "Mariscos",
+    "time": "20 min",
+    "portions": "3 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1535400255456-984241443b29?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "500g de filete de pescado blanco fresco en cubos",
+      "1 taza de jugo de limón fresco recién exprimido",
+      "1 cebolla morada cortada en pluma muy fina",
+      "1 ají limo o chile serrano picado finamente sin semillas",
+      "2 cucharadas de cilantro fresco picado",
+      "Sal y pimienta blanca al gusto"
+    ],
+    "preparation": [
+      "Colocar los cubos de pescado en un tazón de vidrio o acero inoxidable y sazonar generosamente con sal.",
+      "Agregar el ají picado y mezclar bien para que el pescado absorba el toque picante.",
+      "Verter el jugo de limón recién exprimido sobre el pescado (sin exprimir los limones hasta el fondo para evitar amargor).",
+      "Añadir la cebolla morada previamente lavada en agua fría y el cilantro picado.",
+      "Mezclar con suavidad y dejar reposar entre 5 y 10 minutos en el refrigerador.",
+      "Servir inmediatamente acompañado de camote cocido, choclo (elote) y cancha serrana."
+    ],
+    "notes": [
+      "El pescado debe ser extremadamente fresco ya que no pasa por una cocción con calor.",
+      "El limón solo debe curtir la superficie de los cubos de pescado, no lo dejes horas remojando."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Sopa de Tomate",
+    "category": "Sopas",
+    "time": "35 min",
+    "portions": "4 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "1 kg de tomates maduros cortados en cuartos",
+      "1 cebolla mediana y 3 dientes de ajo picados",
+      "2 tazas de caldo de verduras o pollo",
+      "1/2 taza de crema de leche (nata líquida)",
+      "2 cucharadas de aceite de oliva",
+      "Hojas de albahaca fresca, sal y pimienta al gusto"
+    ],
+    "preparation": [
+      "Calentar el aceite de oliva en una olla y sofreír la cebolla y los ajos hasta que estén tiernos.",
+      "Añadir los tomates en cuartos, sazonar con sal y pimienta, y cocinar por 10 minutos hasta que suelten su jugo.",
+      "Verter el caldo de verduras y dejar hervir a fuego medio-bajo durante 15 minutos.",
+      "Retirar del fuego y licuar toda la preparación junto con unas hojas de albahaca hasta obtener una crema suave.",
+      "Regresar la crema a la olla a fuego bajo e incorporar la crema de leche mezclando constantemente.",
+      "Ajustar el punto de sal y servir caliente decorando con un chorrito de crema y albahaca fresca."
+    ],
+    "notes": [
+      "Acompaña esta sopa con un sándwich de queso fundido para un plato clásico reconfortante.",
+      "Si los tomates son muy ácidos, puedes equilibrar el sabor con una pizca de azúcar."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Pollo al Curry",
+    "category": "Platos Fuertes",
+    "time": "40 min",
+    "portions": "4 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "600g de pechuga o muslo de pollo en cubos medianos",
+      "1 lata (400ml) de leche de coco",
+      "2 cucharadas de curry en polvo",
+      "1 cebolla picada y 2 dientes de ajo triturados",
+      "1 cucharadita de jengibre fresco rallado",
+      "2 cucharadas de aceite vegetal y sal al gusto"
+    ],
+    "preparation": [
+      "Sazonar los cubos de pollo con sal y una cucharadita de curry en polvo.",
+      "Calentar el aceite en una sartén profunda y dorar el pollo a fuego medio-alto por todos sus lados; retirar y reservar.",
+      "En la misma sartén, sofreír la cebolla, el ajo y el jengibre hasta que estén dorados.",
+      "Agregar el resto del curry en polvo y cocinar durante un minuto para liberar los aromas de las especias.",
+      "Verter la leche de coco y mezclar bien rascando el fondo de la sartén para integrar los sabores.",
+      "Regresar el pollo a la salsa y cocinar a fuego lento durante 15 minutos hasta que la salsa espese."
+    ],
+    "notes": [
+      "Sirve acompañado de arroz basmati o pan naan caliente.",
+      "Puedes agregar verduras como zanahoria en cubos o pimentón para hacerlo más nutritivo."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Brownie de Chocolate",
+    "category": "Postres",
+    "time": "35 min",
+    "portions": "6 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "200g de chocolate semi-amargo en trozos",
+      "150g de mantequilla sin sal",
+      "1 taza de azúcar blanca y 1/2 taza de azúcar mascabado",
+      "3 huevos grandes a temperatura ambiente",
+      "3/4 de taza de harina de trigo todo uso",
+      "1/4 de taza de cocoa en polvo sin azúcar"
+    ],
+    "preparation": [
+      "Precalentar el horno a 180°C y engrasar un molde cuadrado de 20x20 cm con papel encerado.",
+      "Derretir el chocolate junto con la mantequilla a baño maría o en el microondas en intervalos de 30 segundos.",
+      "Agregar los dos tipos de azúcar al chocolate derretido y mezclar con un batidor de mano.",
+      "Incorporar los huevos uno a uno, batiendo enérgicamente después de cada adición hasta que la mezcla brille.",
+      "Tamizar e integrar la harina y la cocoa con movimientos suaves y envolventes sin sobrebatir.",
+      "Verter en el molde y hornear de 22 a 25 minutos; el centro debe quedar ligeramente húmedo al insertar un palillo."
+    ],
+    "notes": [
+      "No hornees en exceso para lograr una textura húmeda y melcochosa en el centro.",
+      "Espera a que se enfríe completamente antes de cortarlo para obtener bordes limpios."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Pizza Margarita",
+    "category": "Pizzas",
+    "time": "50 min",
+    "portions": "3 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "1 base de masa para pizza pre-fermentada o casera",
+      "1/2 taza de salsa de tomate para pizza (pomodoro)",
+      "200g de queso mozzarella fresco en rodajas",
+      "10-12 hojas frescas de albahaca",
+      "1 cucharada de aceite de oliva extra virgen",
+      "Una pizca de sal marina y pimienta"
+    ],
+    "preparation": [
+      "Precalentar el horno a la máxima temperatura posible (220°C - 250°C) con una bandeja o piedra de pizza dentro.",
+      "Estiramos la masa sobre una superficie ligeramente enharinada hasta formar un círculo de unos 30 cm.",
+      "Distribuir la salsa de tomate de manera uniforme desde el centro hacia los bordes, dejando un margen de 1 cm.",
+      "Colocar las rodajas o trozos de queso mozzarella fresco de forma repartida por toda la superficie.",
+      "Hornear durante 10 a 12 minutos hasta que la masa esté dorada y crujiente y el queso burbujee.",
+      "Retirar del horno, decorar con las hojas frescas de albahaca, un hilo de aceite de oliva y servir de inmediato."
+    ],
+    "notes": [
+      "Para evitar que la masa quede húmeda, escurre bien la mozzarella fresca en papel absorbente antes de usarla.",
+      "Pon la albahaca fresca al salir del horno para que no se queme ni pierda color."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Panqueques con Miel",
+    "category": "Desayunos",
+    "time": "15 min",
+    "portions": "2 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "1 taza de harina de trigo",
+      "1 taza de leche",
+      "1 huevo grande",
+      "2 cucharadas de mantequilla derretida",
+      "2 cucharaditas de polvo para hornear y 1 de azúcar",
+      "Miel de abeja o de maple al gusto para servir"
+    ],
+    "preparation": [
+      "En un tazón grande, mezclar la harina, el polvo para hornear, el azúcar y una pizca de sal.",
+      "En otro recipiente, batir el huevo con la leche y la mantequilla derretida tibia.",
+      "Verter los ingredientes líquidos sobre los secos y mezclar suavemente solo hasta integrar (no importa si quedan grumos pequeños).",
+      "Calentar una sartén antiadherente a fuego medio y engrasar ligeramente con una pizca de mantequilla.",
+      "Verter 1/4 de taza de la mezcla por cada panqueque; voltear cuando aparezcan burbujas en la superficie (aprox. 2 minutos).",
+      "Cocinar por un minuto más del otro lado y servir calientes en torre, bañados con abundante miel."
+    ],
+    "notes": [
+      "No batas la masa en exceso después de poner la harina o los panqueques quedarán duros en vez de esponjosos.",
+      "Puedes agregar arándanos frescos a la masa justo en la sartén antes de darles la vuelta."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Costillas a la Barbacoa",
+    "category": "Carnes",
+    "time": "90 min",
+    "portions": "4 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=60",
+    "ingredients": [
+      "1 costillar de cerdo completo (aprox. 1.5 kg)",
+      "1 taza de salsa BBQ de tu preferencia",
+      "2 cucharadas de azúcar mascabado",
+      "1 cucharada de pimentón dulce (paprika) y 1 de ajo en polvo",
+      "Sal de grano y pimienta negra",
+      "Papel aluminio"
+    ],
+    "preparation": [
+      "Precalentar el horno a 160°C y retirar la membrana blanca de la parte posterior del costillar para mejorar la textura.",
+      "Mezclar el azúcar mascabado, pimentón, ajo en polvo, sal y pimienta y frotar todo el costillar con esta mezcla seca.",
+      "Envolver el costillar herméticamente en doble capa de papel aluminio y hornear durante 1 hora y 15 minutos.",
+      "Sacar del horno, retirar el papel aluminio con cuidado y subir la temperatura del horno a 200°C.",
+      "Barnizar generosamente ambos lados del costillar con la salsa BBQ utilizando una brocha de cocina.",
+      "Regresar al horno sin tapar por 15 minutos adicionales para que la salsa se caramelice."
+    ],
+    "notes": [
+      "La cocción lenta en aluminio asegura que la carne quede tan suave que se desprenda del hueso.",
+      "Puedes darles un toque final en la parrilla al carbón tras hornearlas para un sabor ahumado."
+    ]
   }
 ]
