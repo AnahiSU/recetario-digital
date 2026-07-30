@@ -2,7 +2,7 @@ import { FiChevronLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import ReceiptCard from "../components/ReceiptCard";
-import { recipes } from "../mocks/recipes.json" with { type: "json" };
+import recipes from "../mocks/recipes.json" with { type: "json" };
 
 function SearchReceipts() {
     return (
