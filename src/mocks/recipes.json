@@ -2,29 +2,110 @@
   {
     "id": 1,
     "name": "Pie de limón",
-    "time": "15-20 min",
-    "portions": "3 personas",
-    "urlPhoto": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=500&q=60"
+    "time": "40 min",
+    "portions": "6 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=500&q=60",
+    "category": "Postres",
+    "ingredients": [
+      { "quantity": "1 paquete", "name": "galletas María (o Mabel's)" },
+      { "quantity": "100g", "name": "mantequilla PIL derretida" },
+      { "quantity": "1 lata", "name": "leche condensada" },
+      { "quantity": "1/2 taza", "name": "jugo de limón sutil" },
+      { "quantity": "3 unidades", "name": "yemas de huevo" },
+      { "quantity": "3 claras y 1/2 taza", "name": "azúcar para merengue" }
+    ],
+    "preparation": [
+      "Triturar las galletas y mezclar con la mantequilla derretida.",
+      "Forrar la base de un molde y refrigerar por 15 minutos.",
+      "Batir la leche condensada, las yemas y el jugo de limón.",
+      "Verter la mezcla sobre la base y hornear a 180°C por 15 minutos.",
+      "Hacer un merengue con las claras y azúcar, decorar y dorar."
+    ],
+    "notes": [
+      "Usar limones sutiles verdes para mejor sabor.",
+      "Servir bien frío, ideal dejarlo en la heladera toda la noche."
+    ]
   },
   {
     "id": 2,
     "name": "Ensalada César",
-    "time": "10 min",
+    "time": "15 min",
     "portions": "2 personas",
-    "urlPhoto": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=500&q=60"
+    "urlPhoto": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=500&q=60",
+    "category": "Ensaladas",
+    "ingredients": [
+      { "quantity": "1 planta", "name": "lechuga suiza (bien lavada)" },
+      { "quantity": "1 unidad", "name": "pechuga de pollo Sofía" },
+      { "quantity": "Al gusto", "name": "queso parmesano rallado" },
+      { "quantity": "1 bolsa", "name": "pan molde en cubos (crutones)" },
+      { "quantity": "3 cucharadas", "name": "mayonesa" },
+      { "quantity": "1 diente", "name": "ajo picado" },
+      { "quantity": "Jugo de 1/2", "name": "limón" }
+    ],
+    "preparation": [
+      "Tostar los cubos de pan en una sartén con un poco de mantequilla y ajo.",
+      "Filetear la pechuga, salpimentar y cocinar a la plancha. Cortar en tiras.",
+      "Trocear la lechuga a mano y colocarla en un bol grande.",
+      "Mezclar la mayonesa, ajo picado, limón y parmesano para el aderezo.",
+      "Mezclar todos los ingredientes y servir de inmediato."
+    ],
+    "notes": [
+      "Para una versión más sana, cambia la mayonesa por yogur natural sin azúcar.",
+      "Los crutones quedan más crujientes si se hacen al horno."
+    ]
   },
   {
     "id": 3,
     "name": "Pasta al Pesto",
     "time": "25 min",
     "portions": "4 personas",
-    "urlPhoto": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=500&q=60"
+    "urlPhoto": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=500&q=60",
+    "category": "Platos Principales",
+    "ingredients": [
+      { "quantity": "400g", "name": "fideos Lazzaroni (espagueti)" },
+      { "quantity": "1 manojo", "name": "albahaca fresca" },
+      { "quantity": "50g", "name": "castañas amazónicas (o nueces)" },
+      { "quantity": "1 diente", "name": "ajo pelado" },
+      { "quantity": "Chorro generoso", "name": "aceite de oliva (o Fino)" },
+      { "quantity": "Al gusto", "name": "queso parmesano o criollo rallado" }
+    ],
+    "preparation": [
+      "Hervir abundante agua con sal y cocinar la pasta al dente.",
+      "En una licuadora, poner la albahaca, ajo, castañas, queso y un chorro de aceite.",
+      "Licuar agregando más aceite poco a poco hasta tener una salsa cremosa.",
+      "Escurrir la pasta (guardando un chorrito del agua de cocción).",
+      "Mezclar la pasta caliente con el pesto y servir."
+    ],
+    "notes": [
+      "Las castañas de Pando le dan un sabor local espectacular al pesto.",
+      "No calentar el pesto en la olla, se vuelve amargo."
+    ]
   },
   {
     "id": 4,
     "name": "Tacos al Pastor",
     "time": "45 min",
     "portions": "5 personas",
-    "urlPhoto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=500&q=60"
+    "urlPhoto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=500&q=60",
+    "category": "Platos Principales",
+    "ingredients": [
+      { "quantity": "1 kg", "name": "carne de cerdo (lomo o pulpa)" },
+      { "quantity": "10 unidades", "name": "tortillas de maíz o trigo" },
+      { "quantity": "2 cucharadas", "name": "ají colorado molido" },
+      { "quantity": "1/2 unidad", "name": "piña pelada y picada en cubos" },
+      { "quantity": "Al gusto", "name": "cebolla y cilantro fresco picados" },
+      { "quantity": "Cantidad necesaria", "name": "vinagre, ajo, sal y comino" }
+    ],
+    "preparation": [
+      "Licuar el ají colorado con vinagre, ajo, comino y sal para el adobo.",
+      "Cortar el cerdo en filetes finos y marinar con la mezcla por 2 horas.",
+      "Cocinar la carne en una sartén bien caliente o plancha.",
+      "En la misma sartén, dorar los cubos de piña.",
+      "Calentar las tortillas, poner la carne, piña, cebolla y cilantro."
+    ],
+    "notes": [
+      "El ají colorado reemplaza al achiote tradicional dándole un toque boliviano.",
+      "Si consigues llajua, le queda excelente como salsa picante extra."
+    ]
   }
 ]
