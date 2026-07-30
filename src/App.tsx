@@ -14,9 +14,9 @@ function App() {
         <RecipesProvider>
             <Routes>
                 <Route path="/" element={<AppLayout />}>
-                    <Route index element={<Navigate to="/buscar" replace />} />
-                    <Route path="buscar" element={<SearchReceipts />} />
+                    <Route index element={<Navigate to="/mis-recetas" replace />} />
                     <Route path="mis-recetas" element={<MyRecipes />} />
+                    <Route path="buscar" element={<SearchReceipts />} />
                     <Route path="mis-recetas/:id" element={<RecipeDetail />} />
                     <Route path="menu-semanal" element={<WeeklyMenu />} />
                     <Route path="perfil" element={<Profile />} />
