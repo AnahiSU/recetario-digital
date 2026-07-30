@@ -107,5 +107,140 @@
       "El ají colorado reemplaza al achiote tradicional dándole un toque boliviano.",
       "Si consigues llajua, le queda excelente como salsa picante extra."
     ]
+  },
+  {
+    "id": 5,
+    "name": "Sopa de Maní",
+    "time": "60 min",
+    "portions": "6 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=500&q=60",
+    "category": "Sopas",
+    "ingredients": [
+      { "quantity": "1 taza", "name": "maní crudo pelado" },
+      { "quantity": "500g", "name": "carne de res con hueso (costilla o aguja)" },
+      { "quantity": "1 taza", "name": "fideo macarrón" },
+      { "quantity": "1 unidad", "name": "cebolla y zanahoria" },
+      { "quantity": "4 unidades", "name": "papas cortadas en bastones (para freír)" },
+      { "quantity": "Al gusto", "name": "perejil picado, sal y comino" }
+    ],
+    "preparation": [
+      "Remojar el maní en agua tibia y luego licuarlo hasta obtener una pasta suave.",
+      "Hacer un ahogado sofriendo la cebolla y zanahoria finamente picadas.",
+      "Hervir la carne en abundante agua con el ahogado por 30 minutos.",
+      "Agregar la pasta de maní a la olla, bajando el fuego para que no rebalse, y cocinar 20 minutos.",
+      "Tostar ligeramente el fideo y agregarlo a la sopa hasta que esté suave.",
+      "Servir con papas fritas encima y perejil picado."
+    ],
+    "notes": [
+      "Es importante vigilar la olla al poner el maní porque sube como la leche.",
+      "Infaltable acompañar con un poco de llajua fresca en la mesa."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Majadito de Charque",
+    "time": "45 min",
+    "portions": "4 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=500&q=60",
+    "category": "Platos Principales",
+    "ingredients": [
+      { "quantity": "300g", "name": "charque de res" },
+      { "quantity": "2 tazas", "name": "arroz popular" },
+      { "quantity": "1 unidad", "name": "cebolla picada y medio pimiento morrón" },
+      { "quantity": "2 cucharadas", "name": "urucú en aceite (o colorante rojo)" },
+      { "quantity": "2 unidades", "name": "plátanos de freír maduros" },
+      { "quantity": "4 unidades", "name": "huevos" }
+    ],
+    "preparation": [
+      "Lavar bien el charque y hervirlo para quitar el exceso de sal. Desmenuzar en hilos.",
+      "Tostar el arroz ligeramente en una olla.",
+      "En un sartén, hacer un sofrito con el urucú, la cebolla, el morrón y el charque desmenuzado.",
+      "Mezclar el sofrito con el arroz tostado, agregar agua (el doble que de arroz) y cocinar hasta que seque.",
+      "Freír los plátanos en tajadas y los huevos estrellados."
+    ],
+    "notes": [
+      "Para un majadito 'batido', agrega más agua durante la cocción y no dejes que seque por completo.",
+      "Decorar cada plato con un huevo y un par de tajadas de plátano encima."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Cuñapé",
+    "time": "30 min",
+    "portions": "12 unidades",
+    "urlPhoto": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=60",
+    "category": "Horneados",
+    "ingredients": [
+      { "quantity": "2 tazas", "name": "almidón de yuca" },
+      { "quantity": "2 tazas", "name": "queso criollo o chaqueño rallado" },
+      { "quantity": "1 unidad", "name": "huevo" },
+      { "quantity": "2 cucharadas", "name": "mantequilla a temperatura ambiente" },
+      { "quantity": "Cantidad necesaria", "name": "leche (solo si la masa está muy seca)" }
+    ],
+    "preparation": [
+      "Precalentar el horno a 200°C y engrasar una bandeja.",
+      "En un bol grande, mezclar el almidón de yuca con el queso rallado.",
+      "Añadir el huevo y la mantequilla, amasando con las manos hasta integrar todo.",
+      "Si la masa no se une, agregar un chorrito de leche poco a poco.",
+      "Formar bolitas del tamaño de una nuez grande y hacer un pequeño hueco en la base con el dedo.",
+      "Hornear por 15 a 20 minutos hasta que estén dorados."
+    ],
+    "notes": [
+      "El queso debe ser bastante seco y saladito para que la textura sea perfecta.",
+      "Servir calientes con un buen café destilado o a la hora del té."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Silpancho Cochabambino",
+    "time": "40 min",
+    "portions": "2 personas",
+    "urlPhoto": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=500&q=60",
+    "category": "Platos Principales",
+    "ingredients": [
+      { "quantity": "400g", "name": "carne de res (pulpa en filetes o molida)" },
+      { "quantity": "1 taza", "name": "pan molido" },
+      { "quantity": "1 taza", "name": "arroz blanco graneado" },
+      { "quantity": "2 unidades", "name": "papas cocidas enteras" },
+      { "quantity": "2 unidades", "name": "huevos" },
+      { "quantity": "1 unidad", "name": "tomate, cebolla y locoto (para sarsa)" }
+    ],
+    "preparation": [
+      "Colocar la carne sobre una tabla con pan molido y golpearla con un mazo para aplanarla y apanarla al mismo tiempo. Debe quedar muy delgada.",
+      "Cortar las papas cocidas en rodajas gruesas y dorarlas en aceite.",
+      "Freír la carne apanada en poco aceite, un minuto por lado.",
+      "Preparar la sarsa picando finamente el tomate, la cebolla (previamente lavada) y el locoto con un toque de aceite y sal.",
+      "Armar el plato: base de arroz, rodajas de papa encima, luego la carne gigante, el huevo frito y coronar con la sarsa."
+    ],
+    "notes": [
+      "El truco de un buen silpancho es que la carne ocupe prácticamente todo el plato.",
+      "La sarsa aporta la humedad necesaria, ¡no escatimes en ella!"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Refresco de Mocochinchi",
+    "time": "2 hrs",
+    "portions": "8 vasos",
+    "urlPhoto": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=60",
+    "category": "Bebidas",
+    "ingredients": [
+      { "quantity": "250g", "name": "duraznos deshidratados (mocochinchi)" },
+      { "quantity": "2 litros", "name": "agua" },
+      { "quantity": "1 ramita", "name": "canela" },
+      { "quantity": "3 unidades", "name": "clavos de olor" },
+      { "quantity": "1 taza", "name": "azúcar" }
+    ],
+    "preparation": [
+      "Remojar los duraznos secos en agua desde la noche anterior para que se hidraten bien.",
+      "En una olla pequeña, caramelizar el azúcar a fuego lento hasta que esté dorada (sin quemarse).",
+      "Hervir los duraznos hidratados en los 2 litros de agua junto con la canela y el clavo.",
+      "Agregar el caramelo a la olla (cuidado con las salpicaduras) y dejar hervir a fuego lento por 1 hora.",
+      "Dejar enfriar completamente antes de servir."
+    ],
+    "notes": [
+      "El caramelo es lo que le da ese color marrón oscuro y sabor dulce característico.",
+      "Servir muy frío, asegurándote de incluir un durazno (la 'pepa') en cada vaso."
+    ]
   }
 ]
