@@ -17,15 +17,15 @@ function ReceiptCard({ name, time, portions, urlPhoto }: ReceiptCardProps) {
                     className="w-full h-full object-cover"
                 />
             </div>
-            <h3 className="text-slate-800 text-lg font-medium mb-2">
+            <h3 className="text-slate-800 text-lg font-medium mb-2 font-poppins">
                 {name}
             </h3>
             <div className="flex flex-col gap-1 text-sm text-gray-600">
-                <div className="flex items-center gap-1.5">
+                <div className="flex items-center gap-1.5 font-inter">
                     <span>Tiempo: {time}</span>
                     <FiClock className="text-gray-700 text-base" />
                 </div>
-                <div className="flex items-center gap-1.5">
+                <div className="flex items-center gap-1.5 font-inter">
                     <span>Porciones: {portions}</span>
                     <FiUser className="text-gray-700 text-base" />
                 </div>
