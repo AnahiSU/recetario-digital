@@ -8,7 +8,7 @@ function Sidebar() {
     { id: 'receipts', icon: FiHeart, path: '/mis-recetas' },
     { id: 'menu', icon: FiMenu, path: '/menu-semanal' },
     { id: 'search', icon: FiSearch, path: '/buscar' },
-    { id: 'add', icon: FiPlusCircle, path: '/agregar' },
+    { id: 'add', icon: FiPlusCircle, path: '/receta/nueva' },
     { id: 'cart', icon: FiShoppingCart, path: '/carrito' },
   ];
 
