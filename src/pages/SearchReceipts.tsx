@@ -37,10 +37,10 @@ const recetasMock = [
 function SearchReceipts() {
     return (
         <div className="p-8 w-full max-w-7xl">
-            <div className="mb-6">
+            <div className="mb-6, font-poppins">
                 <Link 
                     to="/mis-recetas" 
-                    className="inline-flex items-center gap-2 text-2xl font-bold text-slate-800 hover:text-sage-green transition-colors w-fit"
+                    className="inline-flex items-center gap-2 text-2xl font-medium text-slate-800 hover:text-sage-green transition-colors w-fit"
                 >
                     <FiChevronLeft className="text-3xl" />
                     Buscador
@@ -49,7 +49,7 @@ function SearchReceipts() {
             <div className="mb-10 w-full max-w-2xl">
                 <SearchBar />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-6">
+            <h2 className="text-2xl font-medium text-slate-800 mb-6 font-poppins">
                 Recetas recientes
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
