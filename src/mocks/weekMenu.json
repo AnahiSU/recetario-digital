@@ -1,0 +1,22 @@
+{
+  "weekLabel": "Semana 27 de julio - 2 de agosto",
+  "days": [
+    {
+      "day": "L",
+      "name": "Lunes",
+      "desayuno": null,
+      "almuerzo": {
+        "id": 4,
+        "name": "Tacos al Pastor",
+        "urlPhoto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=500&q=60"
+      },
+      "cena": null
+    },
+    { "day": "M", "name": "Martes", "desayuno": null, "almuerzo": null, "cena": null },
+    { "day": "M", "name": "Miercoles", "desayuno": null, "almuerzo": null, "cena": null },
+    { "day": "J", "name": "Jueves", "desayuno": null, "almuerzo": null, "cena": null },
+    { "day": "V", "name": "Viernes", "desayuno": null, "almuerzo": null, "cena": null },
+    { "day": "S", "name": "Sabado", "desayuno": null, "almuerzo": null, "cena": null },
+    { "day": "D", "name": "Domingo", "desayuno": null, "almuerzo": null, "cena": null }
+  ]
+}

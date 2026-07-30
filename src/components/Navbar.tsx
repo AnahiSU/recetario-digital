@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="bg-terracotta flex items-center justify-between px-6 py-3 shadow-md">
@@ -14,13 +15,17 @@ function Navbar() {
         </p>
       </div>
 
-      <div className="w-10 h-10 rounded-full border-2 border-cream bg-slate-blue overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
+      <Link
+        to="/perfil"
+        aria-label="Ir a mi perfil"
+        className="w-10 h-10 rounded-full border-2 border-cream bg-slate-blue overflow-hidden cursor-pointer hover:opacity-80 transition-opacity block"
+      >
         <img 
-          src="/ruta-a-tu-foto.png" 
+          src="https://i.pinimg.com/736x/b5/65/36/b56536e4948f6f1720cdfc686ebb3364.jpg" 
           alt="foto-usuario" 
           className="w-full h-full object-cover"
         />
-      </div>
+      </Link>
 
     </nav>
   );
