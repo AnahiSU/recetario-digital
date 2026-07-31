@@ -98,7 +98,7 @@ Esto ejecuta `pnpm build` (a través de `predeploy`) y publica el contenido de `
 
 ## Autoría
 
-Proyecto desarrollado para la materia de Interacción Humano-Computador, Facultad de Ciencias y Tecnología, Universidad Mayor de San Simón.
+Proyecto desarrollado para la materia de Interacción Humano-Computador bajo el nombre de Sobrecocinados, en la Facultad de Ciencias y Tecnología, Universidad Mayor de San Simón.
 
 - Alisson Dalet Alvarado
 - Leonel Zeballos Aldunate
