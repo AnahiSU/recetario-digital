@@ -2,7 +2,7 @@
 
 Aplicación web para guardar y organizar recetas de cocina propias, planificar un menú semanal por día y tiempo de comida (desayuno, almuerzo, cena) y generar una lista de compras a partir de las recetas y del menú planificado.
 
-**Demo:** https://anahisu.github.io/recetario-digital
+**Demo:** [https://anahisu.github.io/recetario-digital](https://recetario-digital-tau.vercel.app/)
 
 ## Funcionalidades
 
